@@ -1,4 +1,4 @@
-import org.example.Palindrome
+import vivek.Palindrome
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 

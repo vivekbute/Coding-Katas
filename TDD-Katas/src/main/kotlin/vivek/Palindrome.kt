@@ -1,4 +1,4 @@
-package org.example
+package vivek
 
 class Palindrome {
     fun isPalindrome(number: Int): Boolean {
