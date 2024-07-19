@@ -8,7 +8,7 @@ class LongestSubstringTest {
     private val longestSubstring = LongestSubstring()
 
     @Test
-    fun `length of the given string should be greater than zero`() {
+    fun `length should be equal to the size of the longest substring`() {
         assertEquals(3, longestSubstring.lengthOfLongestSubstring("apple"))
     }
 }
