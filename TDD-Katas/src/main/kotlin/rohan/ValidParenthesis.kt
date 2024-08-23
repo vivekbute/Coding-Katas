@@ -6,14 +6,14 @@ class ValidParenthesis {
 
     fun isValid(s: String): Boolean {
         if (s.length % 2 == 1) return false
-        val bracketStack=Stack<String>()
+        val bracketStack=Stack<Char>()
         s.forEach {
             when(it.toString()){
-                "{"->bracketStack.push("}")
-                "("->bracketStack.push(")")
-                "["->bracketStack.push("]")
+                "{"->bracketStack.push('}')
+                "("->bracketStack.push(')')
+                "["->bracketStack.push(']')
                 else-> {
-                    if(bracketStack.isEmpty()||bracketStack.pop()!=it.toString()){
+                    if(bracketStack.isEmpty() || !(bracketStack.pop().equals(it))){
                         return false
                     }
                 }
